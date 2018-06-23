@@ -1,24 +1,25 @@
-@media screen and (min-width: 1153px) { .ixmore:hover { background: #fff; color: #b32521; }
-  .h-link:hover { background: #b32521; color: #fff; }
-  .nav a:hover { color: #b32521; }
-  .nav a:hover:before { left: 0; right: auto; width: 100%; }
-  .banner-pro a:hover { background: #b32521; }
-  .in-nav li:hover { background: #b32521; }
-  .in-sp:hover .nowti { color: #b32521; }
-  .in-list a:hover .date, .in-list a:hover { color: #b32521; }
-  .in-list a:hover .nowti:before { background: #b32521; }
-  .ix-video:hover .aico { -webkit-transform: scale(0.95); transform: scale(0.95); }
-  .ip-nav a:hover { color: #b32521; }
-  .ir-arrow .slick-arrow:hover { background-color: #b32521; }
-  .ir-title:hover { background: #b32521; color: #fff; }
-  .ir-title:hover .ir-plus:before, .ir-title:hover .ir-plus { background: #fff; }
-  .ir-list a:hover { background: #f2f2f2; color: #b32521; }
-  .ir-list a:hover .date { color: #b32521; }
-  .ib-list a:hover { color: #b32521; }
-  .ib-list a:hover .pic2:after { border-color: #b32521; }
-  .footer a:hover { color: #b32521; }
-  .share a:hover { background-position: center bottom; }
-  .pnav a:hover { background: #b32521; color: #fff; } }
+@media screen and (min-width: 1153px) {
+.banner .slick-arrow:hover{ opacity: 1; }
+.av-close:hover{ opacity: 0.7; }
+.av-close:hover .ico{transform: rotate(180deg); }
+.link-group .shop:hover{ background-position: right top; }
+.link-group .home:hover{ background-position: right bottom; }
+.link-group a:hover{ background-color: #00ffff; }
+.top-nav a:hover .ico{ -webkit-transform: translateY(-10px); -ms-transform: translateY(-10px); -o-transform: translateY(-10px); transform: translateY(-10px); }
+.side-nav a:hover{ border-color: #a00ea0; }
+.dj1 .chv-list a:hover .txts{ bottom: -72px; background: rgba(160,14,160,.8); }
+.dj1 .chv-list a:hover .line{ animation: none; opacity: 0; visibility: hidden; transition: 400ms; }
+.dj1 .chv-list a:hover .name, .dj1 .chv-list a:hover .aw{ opacity: 0; visibility: hidden; }
+.dj1 .chv-list a:hover .txx{ transform: none; opacity: 1; visibility: visible;  }
+.wh-imgs .slick-dots li:hover{ background: #00ffff; }
+.wh-item:hover .txts{ transform: none; opacity: 1; visibility: visible; }
+.wh-item:hover:before{ opacity: 1; visibility: visible; }
+.wh-item:hover .name_1, .wh-item:hover:after{ opacity: 0; visibility: hidden; }
+.dj3 .chv-list a:hover .pic:after{ opacity: 1; visibility: visible; } 
+.dj3 .chv-list a:hover .tx{ transform: none; opacity: 1; visibility: visible; }
+.dj3 .chv-list a:hover .aw{ -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg); }
+
+}
 @media screen and (max-width: 1600px) { .container { min-height: 800px; }
   .banner .ch { font-size: 50px; }
   .banner .txts { top: 35%; }
