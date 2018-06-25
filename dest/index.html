@@ -117,7 +117,7 @@
                         </div>
                         <img src="img/chv_x22.png" alt="" class="txx">
                     </a></li>
-                    <li id="d2"><a href="dj.html" class="scapic">
+                    <li id="d2"><a href="dj2.html" class="scapic">
                         <div class="pic"><img src="img/c_img2.jpg" alt=""></div>
                         <div class="txts">
                             <span class="line"></span>
@@ -126,7 +126,7 @@
                         </div>
                         <img src="img/chv_x23.png" alt="" class="txx">
                     </a></li>
-                    <li id="d3"><a href="dj.html" class="scapic">
+                    <li id="d3"><a href="dj3.html" class="scapic">
                         <div class="pic"><img src="img/c_img3.jpg" alt=""></div>
                         <div class="txts">
                             <span class="line"></span>
@@ -135,7 +135,7 @@
                         </div>
                         <img src="img/chv_x2.png" alt="" class="txx">
                     </a></li>
-                    <li id="d4"><a href="dj.html" class="scapic">
+                    <li id="d4"><a href="dj4.html" class="scapic">
                         <div class="pic"><img src="img/c_img4.jpg" alt=""></div>
                         <div class="txts">
                             <span class="line"></span>
@@ -144,7 +144,7 @@
                         </div>
                         <img src="img/chv_x24.png" alt="" class="txx">
                     </a></li>
-                    <li id="d5"><a href="dj.html" class="scapic">
+                    <li id="d5"><a href="dj5.html" class="scapic">
                         <div class="pic"><img src="img/c_i5.jpg" alt=""></div>
                         <div class="txts">
                             <span class="line"></span>
@@ -153,7 +153,7 @@
                         </div>
                         <img src="img/chv_x25.png" alt="" class="txx">
                     </a></li>
-                    <li id="d6"><a href="dj.html" class="scapic">
+                    <li id="d6"><a href="dj6.html" class="scapic">
                         <div class="pic"><img src="img/c_i6.jpg" alt=""></div>
                         <div class="txts">
                             <span class="line"></span>
@@ -162,7 +162,7 @@
                         </div>
                         <img src="img/chv_x26.png" alt="" class="txx">
                     </a></li>
-                    <li id="d7"><a href="dj.html" class="scapic">
+                    <li id="d7"><a href="dj7.html" class="scapic">
                         <div class="pic"><img src="img/c_i7.jpg" alt=""></div>
                         <div class="txts">
                             <span class="line"></span>
@@ -171,7 +171,7 @@
                         </div>
                         <img src="img/chv_x27.png" alt="" class="txx">
                     </a></li>
-                    <li id="d8"><a href="dj.html" class="scapic">
+                    <li id="d8"><a href="dj8.html" class="scapic">
                         <div class="pic"><img src="img/c_i8.jpg" alt=""></div>
                         <div class="txts">
                             <span class="line"></span>
@@ -180,7 +180,7 @@
                         </div>
                         <img src="img/chv_x28.png" alt="" class="txx">
                     </a></li>
-                    <li id="d9"><a href="dj.html" class="scapic">
+                    <li id="d9"><a href="dj9.html" class="scapic">
                         <div class="pic"><img src="img/c_i9.jpg" alt=""></div>
                         <div class="txts">
                             <span class="line"></span>
@@ -384,7 +384,6 @@
         turnNewsFix();
         $(window).scroll(function () {
             turnNewsFix();
-            scrollChange();
         });
         $('.side-nav li').each(function(i, e) {
             $(this).css({
@@ -400,10 +399,16 @@
         });
         var ot = [],
             oi = -1;
-        $('.dj').each(function(i, e){
-            ot[i] = $(this).offset().top - w_height*0.5;
-        });
-        ot[0] = -1;
+        setTimeout(function(){
+            $('.dj').each(function(i, e){
+                ot[i] = $(this).offset().top - w_height*0.5;
+            });
+            ot[0] = -1;
+            scrollChange();
+            $(window).scroll(function () {
+                scrollChange();
+            });
+        },800);
         function scrollChange () {
             var st = $(window).scrollTop();
             for (var i = 0; i < ot.length - 1; i++) {
@@ -421,10 +426,8 @@
                         },50);
                     });
                 }
-               
             };
         };
-        scrollChange();
         $('.ac-group').each(function(i, e){
             $(this).find('p').css({
                 'transition-delay': 200*i + 'ms',
