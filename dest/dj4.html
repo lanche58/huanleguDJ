@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>欢乐谷</title>
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+<meta name="format-detection" content="telephone=no" >
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<meta name="msapplication-navbutton-color" content="#4285f4">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.min.js"></script>
+<!--[if lt IE 9]>
+    <script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+    <style type="text/css">
+        html{ margin-left: 0 !important;}
+    </style>
+<![endif]-->
+<style>
+    html, body{ overflow: hidden; height: 100%; }
+    @media screen and (max-width: 1024px) {
+    html, body{ overflow: visible; height: auto; }  
+    }
+</style>
+</head>
+<body>
+<!-- <div class="auto-audio"><audio id="aa" src="img/bg.mp3" autoplay loop controls>您的浏览器不支持 audio 标签。</audio></div> -->
+<!-- auto-audio -->
+<div class="link-group">
+    <a href="http://happyvalleycd.smartoct.com/pc/" class="ico shop"></a>
+    <a href="http://cd.happyvalley.cn/" class="ico home"></a>
+</div>
+<!-- link-group -->
+<div class="dj-arrow dj-prev bosi" style="background-image: url(img/dj_img13.jpg);"><a href="dj3.html"><i class="ico"></i></a></div>
+<div class="dj-arrow dj-next bosi" style="background-image: url(img/dj_img15.jpg);"><a href="dj5.html"><i class="ico"></i></a></div>
+<!-- dj-arrow -->
+<div class="dj-back"><a href="index.html?#d4">返回</a></div>
+<!-- dj-back -->
+<div class="dj-box scroll-animation">
+    <div class="dj-bg parallax" data-depth="-0.3"  style="background-image: url(img/bg_3.jpg);"></div>
+    <div class="dj-name parallax" data-depth="-0.1"><img src="img/dj_name4.png" alt=""></div>
+    <div class="dj4">
+        <div class="glitch-box am-fid">
+            <div class="glitch">
+                <div class="pic2"><img src="img/4.jpg" alt=""></div>
+                <div class="pic2"><img src="img/4.jpg" alt=""></div>
+                <div class="pic2"><img src="img/4.jpg" alt=""></div>
+                <div class="pic2"><img src="img/4.jpg" alt=""></div>
+                <div class="pic2"><img src="img/4.jpg" alt=""></div>
+            </div>
+            <div class="txts bosi">
+                <div class="name tx1 tac"><img src="img/dj_tx24.png" alt=""></div>
+                <p class="xtx taj">全球影响力巨大的热门电音厂牌barong family旗下主力战将，更与众多顶级电音厂牌合作发行过作品，其发行的单曲《Malfunction》拥有400万以上的播放量，获得知名业内人士的支持和青睐。</p>
+                <div class="name tx2 tac"><img src="img/dj_tx34.png" alt=""></div>
+            </div>
+        </div>
+        <div class="dj-tx bosi am-fiu am-delay-4">
+            <p class="name tac"><img src="img/dj_tx14.png" alt=""></p>
+            <p class="xtx taj">最炸裂的bassline攻击，持续投放的节拍炸弹吹响战鼓！夸张特异的异界人出现在狂欢舞池中，让你分不清现实与异界空间。在这里，信仰与自由同在！</p>
+        </div>
+    </div>
+    <!-- dj4 -->
+</div>
+<!-- dj-box -->
+<script src="js/plugin.js"></script>
+<script src="js/page.js"></script>
+<script>
+    $(function(){
+        if(!isMobile){
+            $('.dj-box').parallax({
+                selector: '.parallax'
+            });
+        }
+    })
+</script>
+</body>
+</html>

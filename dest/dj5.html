@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>欢乐谷</title>
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+<meta name="format-detection" content="telephone=no" >
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<meta name="msapplication-navbutton-color" content="#4285f4">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.min.js"></script>
+<!--[if lt IE 9]>
+    <script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+    <style type="text/css">
+        html{ margin-left: 0 !important;}
+    </style>
+<![endif]-->
+<style>
+    html, body{ overflow: hidden; height: 100%; }
+    @media screen and (max-width: 1024px) {
+    html, body{ overflow: visible; height: auto; }  
+    }
+</style>
+</head>
+<body>
+<!-- <div class="auto-audio"><audio id="aa" src="img/bg.mp3" autoplay loop controls>您的浏览器不支持 audio 标签。</audio></div> -->
+<!-- auto-audio -->
+<div class="link-group">
+    <a href="http://happyvalleycd.smartoct.com/pc/" class="ico shop"></a>
+    <a href="http://cd.happyvalley.cn/" class="ico home"></a>
+</div>
+<!-- link-group -->
+<div class="dj-arrow dj-prev bosi" style="background-image: url(img/dj_img14.jpg);"><a href="dj4.html"><i class="ico"></i></a></div>
+<div class="dj-arrow dj-next bosi" style="background-image: url(img/dj_img16.jpg);"><a href="dj6.html"><i class="ico"></i></a></div>
+<!-- dj-arrow -->
+<div class="dj-back"><a href="index.html?#d5">返回</a></div>
+<!-- dj-back -->
+<div class="dj-box scroll-animation">
+    <div class="dj-bg parallax" data-depth="-0.3"  style="background-image: url(img/bg_4.jpg);"></div>
+    <div class="dj-name parallax" data-depth="-0.1"><img src="img/dj_name5.png" alt=""></div>
+    <div class="dj4">
+        <div class="glitch-box am-fid">
+            <div class="glitch">
+                <div class="pic2"><img src="img/5.jpg" alt=""></div>
+                <div class="pic2"><img src="img/5.jpg" alt=""></div>
+                <div class="pic2"><img src="img/5.jpg" alt=""></div>
+                <div class="pic2"><img src="img/5.jpg" alt=""></div>
+                <div class="pic2"><img src="img/5.jpg" alt=""></div>
+            </div>
+            <div class="txts bosi">
+                <div class="name tx1 tac"><img src="img/dj_tx25.png" alt=""></div>
+                <p class="xtx taj">Trap大神，被公认为近年来占据全球Hip-hop party的Floor-Shattering Trap的创作者，迄今为止他的作品在全球已经达到6百万次的下载量，受到Billboard、Complex、Spin等知名音乐媒体的追捧，并被邀请在多个世界顶级电音节现场演出。</p>
+                <div class="name tx2 tac"><img src="img/dj_tx35.png" alt=""></div>
+            </div>
+        </div>
+        <div class="dj-tx bosi am-fiu am-delay-4">
+            <p class="name tac"><img src="img/dj_tx15.png" alt=""></p>
+            <p class="xtx taj">魅力十足的魔幻彩虹岛，将配合震撼的电子低音，开启变幻多端的幻彩电光秀，展现声与光的完美融合。一起沉浸在荧光海洋里，享受国际级的视听盛宴！</p>
+        </div>
+    </div>
+    <!-- dj4 -->
+</div>
+<!-- dj-box -->
+<script src="js/plugin.js"></script>
+<script src="js/page.js"></script>
+<script>
+    $(function(){
+        if(!isMobile){
+            $('.dj-box').parallax({
+                selector: '.parallax'
+            });
+        }
+    })
+</script>
+</body>
+</html>

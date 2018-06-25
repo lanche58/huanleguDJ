@@ -83,8 +83,8 @@
 .glitch .pic2{ display: none; position: static; }
 .glitch .pic2:first-child{ display: block; }
 .glitch-box .txts {position: static; padding-bottom: 40px; }
-.dj-tx{ width: 420px; }
-.dj-tx{ padding-bottom: 40px; }
+.dj-tx{ width: 420px; padding-left: 55px; padding-right: 55px; padding-bottom: 40px; }
+.dj-tx .xtx{ padding: 0; }
 .glitch-box .tx1{ border: none; }
 .dj4{ padding: 120px 0 160px 0; }
 .dj-arrow{ border-color: #00ffff; }
