@@ -24,7 +24,6 @@
 .dj-back a:hover{ background: #00ffff; color: #000; }
 .side-nav li{-webkit-transform: translateY(-10px);transform: translateY(-10px); opacity: 0; visibility: hidden; -webkit-transition: 600ms; transition: 600ms; }
 .side-nav.show li{ -webkit-transform: none; transform: none; opacity: 1; visibility: visible; }
-.wh-item .txts{-webkit-transform: translateY(20px);transform: translateY(20px); opacity: 0; visibility: hidden; -webkit-transition: 600ms; transition: 600ms; }
 .glitch .pic2:nth-child(n+2) {opacity: 0; -webkit-animation-duration: 4s; animation-duration: 4s; -webkit-animation-delay: 2s; animation-delay: 2s; -webkit-animation-timing-function: linear; animation-timing-function: linear; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
 .glitch .pic2:nth-child(2) {background-color: transparent; background-blend-mode: none; -webkit-animation-name: glitch-anim-1; animation-name: glitch-anim-1; }
 .glitch .pic2:nth-child(3) {background-color: transparent; background-blend-mode: none; -webkit-animation-name: glitch-anim-2; animation-name: glitch-anim-2; }
@@ -49,11 +48,14 @@
 .page-l.fix {margin-left: -500px; }
 .page-r {padding-right: 0; }
 .chv-list a {margin-left: 35px; }
+.dj1 .chv-list a{ height: 411px; }
+.dj3 .chv-list a {height: 246px; }
 .chv-list{ margin-left: -35px; }
 .page-l {padding-top: 80px; }
 .acg4 {margin-top: 55px; }
 .dj-tx {margin-left: -350px; width: 700px; height: 190px; bottom: 0; }
 .glitch-box{ bottom: 30px; }
+.wh-item{ height: 404px; }
 
 
 }
@@ -74,7 +76,7 @@
 .dj2 {padding: 60px 0 0 0; }
 .wh-item .txts {position: static; max-height: none; background: rgba(160,14,160,.8); padding: 35px 5%; }
 .wh-imgs .slick-dots {left: 5%; right: 5%; bottom: 25px; text-align: center; }
-.wh-item {margin-bottom: 60px; }
+.wh-item {margin-bottom: 60px; height: auto; }
 .dj3 { padding: 60px 0; }
 .dj3 .chv-list .tx {-webkit-transform: none;transform: none; opacity: 1; visibility: visible; }
 .dj3 .chv-list .pic:after{ opacity: 1; visibility: visible; }
@@ -91,6 +93,7 @@
 .dj-arrow .ico{ -webkit-transform: none; transform: none; opacity: 1; visibility: visible; }
 .dj-back a{ background-color: rgba(123,4,36,.8); }
 .auto-video .aw{ display: block; }
+.chv-list a{ height: auto !important; }
 }
 @media screen and (max-width: 861px) {
 .auto-video {width: 500px; margin-left: -250px; margin-top: -130px; }
