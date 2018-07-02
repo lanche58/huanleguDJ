@@ -600,3 +600,8 @@ background-size: 10px 100%; opacity: 0; visibility: hidden; -webkit-transition: 
 body{background: #000;}
 .banner{ z-index: 1; }
 
+.dj1 .chv-list a.default .txts{ bottom: -72px; background: rgba(160,14,160,.8); }
+.dj1 .chv-list a.default .line{ -webkit-animation: none; animation: none; opacity: 0; visibility: hidden; -webkit-transition: 400ms; transition: 400ms; }
+.dj1 .chv-list a.default .name, .dj1 .chv-list a.default .aw{ opacity: 0; visibility: hidden; }
+.dj1 .chv-list a.default .txx{ -webkit-transform: none; transform: none; opacity: 1; visibility: visible;  }
+.glitch-box.default .txts{ bottom: 0; } 
