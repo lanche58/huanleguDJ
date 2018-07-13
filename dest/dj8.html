@@ -15,12 +15,6 @@
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/responsive.css" rel="stylesheet" type="text/css">
 <script src="js/jquery.min.js"></script>
-<!--[if lt IE 9]>
-    <script type="text/javascript" src="js/css3-mediaqueries.js"></script>
-    <style type="text/css">
-        html{ margin-left: 0 !important;}
-    </style>
-<![endif]-->
 <style>
     html, body{ overflow: hidden; height: 100%; }
     @media screen and (max-width: 1024px) {
@@ -55,7 +49,7 @@
             </div>
             <div class="txts bosi">
                 <div class="name tx1 tac"><img src="img/dj_tx28.png" alt=""></div>
-                <p class="xtx taj">Dupstep的法国顶梁柱，在法国电音爱好者中家喻户晓，电音厂牌never say die的主力战将之一，其单曲曾被国际巨星用于现场演出。Habstrakt的现场十分炸裂，去年在中国的演出更是场场爆满！</p>
+                <p class="xtx taj">Dubstep的法国顶梁柱，在法国电音爱好者中家喻户晓，电音厂牌never say die的主力战将之一，其单曲曾被国际巨星用于现场演出。Habstrakt的现场十分炸裂，去年在中国的演出更是场场爆满！</p>
                 <div class="name tx2 tac"><img src="img/dj_tx38.png" alt=""></div>
             </div>
         </div>
@@ -68,13 +62,24 @@
 </div>
 <!-- dj-box -->
 <script src="js/plugin.js"></script>
+<script src="js/parallax.js"></script>
 <script src="js/page.js"></script>
 <script>
     $(function(){
-        if(!isMobile){
-            $('.dj-box').parallax({
-                selector: '.parallax'
-            });
+        var userAgent = navigator.userAgent;
+        var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1; //判断是否IE<11浏览器
+        var fIEVersion = -1;
+        if (isIE) {
+            var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+            reIE.test(userAgent);
+            fIEVersion = parseFloat(RegExp["$1"]);
+        }
+        if (fIEVersion === -1 || fIEVersion > 9) {
+            if(!isMobile){
+                $('.dj-box').parallax({
+                    selector: '.parallax'
+                });
+            }
         }
     })
 </script>

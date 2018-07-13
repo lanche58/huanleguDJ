@@ -15,12 +15,6 @@
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/responsive.css" rel="stylesheet" type="text/css">
 <script src="js/jquery.min.js"></script>
-<!--[if lt IE 9]>
-    <script type="text/javascript" src="js/css3-mediaqueries.js"></script>
-    <style type="text/css">
-        html{ margin-left: 0 !important;}
-    </style>
-<![endif]-->
 </head>
 <body>
 <!-- <div class="auto-audio"><audio id="aa" src="img/bg.mp3" preload loop controls>您的浏览器不支持 audio 标签。</audio></div> -->
@@ -297,15 +291,16 @@
 <script src="js/plugin.js"></script>
 <script src="js/page.js"></script>
 <script>
-    window.addEventListener('orientationchange', function(event) {
-        if (window.orientation == 180 || window.orientation == 0) {
-            $(".landscape-wrap").addClass("boxhide");
-        }
-        if (window.orientation == 90 || window.orientation == -90) {
-            $(".landscape-wrap").removeClass("boxhide");
-        }
-    });
-    
+    if (isMobile) {
+        window.addEventListener('orientationchange', function(event) {
+            if (window.orientation == 180 || window.orientation == 0) {
+                $(".landscape-wrap").addClass("boxhide");
+            }
+            if (window.orientation == 90 || window.orientation == -90) {
+                $(".landscape-wrap").removeClass("boxhide");
+            }
+        })
+    };
     function indexBox(){
         $('.banner-box').css({height: w_height});
         $('.banner').css({height: w_height});

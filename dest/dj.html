@@ -15,12 +15,6 @@
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/responsive.css" rel="stylesheet" type="text/css">
 <script src="js/jquery.min.js"></script>
-<!--[if lt IE 9]>
-    <script type="text/javascript" src="js/css3-mediaqueries.js"></script>
-    <style type="text/css">
-        html{ margin-left: 0 !important;}
-    </style>
-<![endif]-->
 <style>
     html, body{ overflow: hidden; height: 100%; }
     @media screen and (max-width: 1024px) {
@@ -68,14 +62,25 @@
 </div>
 <!-- dj-box -->
 <script src="js/plugin.js"></script>
+<script src="js/parallax.js"></script>
 <script src="js/page.js"></script>
 <script>
     $(function(){
-        if(!isMobile){
-            $('.dj-box').parallax({
-                selector: '.parallax'
-            });
+        var userAgent = navigator.userAgent;
+        var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1; //判断是否IE<11浏览器
+        var fIEVersion = -1;
+        if (isIE) {
+            var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+            reIE.test(userAgent);
+            fIEVersion = parseFloat(RegExp["$1"]);
         }
+        if (fIEVersion === -1 || fIEVersion > 9) {
+            if(!isMobile){
+                $('.dj-box').parallax({
+                    selector: '.parallax'
+                });
+            }
+        }        
     })
 </script>
 </body>
